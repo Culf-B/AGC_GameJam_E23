@@ -4,7 +4,7 @@ const sH = 800;
 
 function setup() {
   createCanvas(sW, sH);
-  player = new Player(83, 87, 65, 68, 32);
+  player = new Player(65, 68, 32);
 }
 
 function draw() {
