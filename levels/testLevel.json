@@ -6,18 +6,11 @@
         "background1",
         "background2"
     ],
-    "layers": [
-        {
-            "name": "ground",
-            "placement": 1
-        },
-        {
-            "name": "background1",
-            "placement": 2
-        },
-        {   
-            "name": "background2",
-            "placement": 3
-        }
+    "backgroundLayers": [
+        "background2",
+        "background1",
+        "ground"
+    ],
+    "foregroundLayers": [
     ]
 }
