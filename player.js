@@ -16,12 +16,14 @@ class Player {
         this.vel = [0, 0];
         
         // Position and size
-        this.x = 100;
+        this.x = 0;
         this.y = 100;
         this.size = 100;
+
+        this.freeMove = false;
     }
   
-    update(delta) {
+    update(delta, level) {
         /*
         Events and movement
         Argument "delta" has to be time in seconds since the last frame (deltaTime / 1000)
@@ -55,10 +57,16 @@ class Player {
           this.y = sH - this.size;
         }
     }
-    draw() {
+    draw(level) {
         /*
         Draw the player on the screen
         */
-        square(this.x, this.y, this.size);
+        if (this.freeMove && this.x > 0) {
+            square(this.x + sW / 2 - this.size / 2 - (level.levelWidth - level.sW), this.y, this.size);
+        } else if (this.freeMove && this.x < 0) {
+            square(this.x + sW / 2 - this.size / 2, this.y, this.size);
+        } else {
+            square(sW / 2 - this.size / 2, this.y, this.size);
+        }
     }
   }
