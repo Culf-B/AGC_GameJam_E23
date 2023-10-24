@@ -1,0 +1,21 @@
+{
+    "assets":
+    [
+        {
+            "name": "background1",
+            "file": "background1.png"
+        },
+        {
+            "name": "background2",
+            "file": "background2.png"
+        },
+        {
+            "name": "flower",
+            "file": "flower.png"
+        },
+        {
+            "name": "ground",
+            "file": "ground.png"
+        }
+    ]
+}
