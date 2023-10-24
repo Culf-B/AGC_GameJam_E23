@@ -9,19 +9,23 @@ class Level {
         this.foregroundLayers = this.levelData.value.foregroundLayers;
         this.backgroundLayers = this.levelData.value.backgroundLayers;
     }
+
     update(delta) {
         this.player.update(delta);
     }
+
     draw() {
-        // Background layers starting at 1
+        // Background layers
         this.backgroundLayers.forEach(layer => {
-            image(this.allAssets[layer].file, 0, 0, this.width, this.height);
+            image(this.allAssets[layer].file, 0, 0, (this.height * this.allAssets[layer].file.width) / this.allAssets[layer].file.height, this.height);
         });
+
         // Layer 0 Player
         this.player.draw();
-        // Foreground layers starting at -1
+
+        // Foreground layers
         this.foregroundLayers.forEach(layer => {
-            image(this.allAssets[layer].file, 0, 0, this.width, this.height)
+            image(this.allAssets[layer].file, 0, 0, (this.height * this.allAssets[layer].file.width) / this.allAssets[layer].file.height, this.height)
         });
     }
 }
