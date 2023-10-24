@@ -62,11 +62,12 @@ class Player {
         Draw the player on the screen
         */
         if (this.freeMove && this.x > 0) {
-            square(this.x + sW / 2 - this.size / 2 - (level.levelWidth - level.sW), this.y, this.size);
+            this.drawX = this.x + sW / 2 - this.size / 2 - (level.levelWidth - level.sW);
         } else if (this.freeMove && this.x < 0) {
-            square(this.x + sW / 2 - this.size / 2, this.y, this.size);
+            this.drawX = this.x + sW / 2 - this.size / 2;
         } else {
-            square(sW / 2 - this.size / 2, this.y, this.size);
+            this.drawX = sW / 2 - this.size / 2;
         }
+        square(this.drawX, this.y, this.size);
     }
   }
