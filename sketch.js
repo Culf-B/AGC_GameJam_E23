@@ -34,7 +34,7 @@ function preload() {
   // Preload asset files
   loadJSON("assets/assets.json", loadAssets);
   // Preload level files
-  loadJSON("levels/testLevel.json", loadLevels);
+  loadJSON("levels/lvl1.json", loadLevels);
 }
 
 function setup() {

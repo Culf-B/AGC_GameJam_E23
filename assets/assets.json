@@ -16,6 +16,42 @@
         {
             "name": "ground",
             "file": "ground.png"
+        },
+        {
+            "name": "lvl1_bg0",
+            "file": "lvl1_bg0.png"
+        },
+        {
+            "name": "lvl1_bg1",
+            "file": "lvl1_bg1.png"
+        },
+        {
+            "name": "lvl1_bg2",
+            "file": "lvl1_bg2.png"
+        },
+        {
+            "name": "lvl1_bg3",
+            "file": "lvl1_bg3.png"
+        },
+        {
+            "name": "lvl1_bg4",
+            "file": "lvl1_bg4.png"
+        },
+        {
+            "name": "lvl1_bg5",
+            "file": "lvl1_bg5.png"
+        },
+        {
+            "name": "lvl1_bg6",
+            "file": "lvl1_bg6.png"
+        },
+        {
+            "name": "lvl1_fg0",
+            "file": "lvl1_fg0.png"
+        },
+        {
+            "name": "lvl1_fg1",
+            "file": "lvl1_fg1.png"
         }
     ]
 }
