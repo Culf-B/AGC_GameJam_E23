@@ -37,7 +37,8 @@ class Level {
 
         // Background layers
         this.backgroundLayers.forEach(layer => {
-            image(this.allAssets[layer].file, this.envX, 0, (this.sH * this.allAssets[layer].file.width) / this.allAssets[layer].file.height, this.sH);
+            console.log(this.envX*0.1);
+            image(this.allAssets[layer.name].file, this.envX * layer.scrollfactor + layer.startPos[0], layer.startPos[1], (this.sH * this.allAssets[layer.name].file.width) / this.allAssets[layer.name].file.height, this.sH);
         });
 
         // Layer 0 Player
@@ -45,7 +46,7 @@ class Level {
 
         // Foreground layers
         this.foregroundLayers.forEach(layer => {
-            image(this.allAssets[layer].file, this.envX, 0, (this.sH * this.allAssets[layer].file.width) / this.allAssets[layer].file.height, this.sH)
+            image(this.allAssets[layer.name].file, this.envX * layer.scrollfactor + layer.startPos[0], layer.startPos[1], (this.sH * this.allAssets[layer.name].file.width) / this.allAssets[layer.name].file.height, this.sH)
         });
     }
 }

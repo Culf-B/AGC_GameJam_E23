@@ -13,16 +13,16 @@
         "lvl1_fg1"
     ],
     "backgroundLayers": [
-        "bgGradient",
-        "lvl1_bg1",
-        "lvl1_bg2",
-        "bgGround",
-        "lvl1_bg4",
-        "lvl1_bg5",
-        "lvl1_bg6"
+        {"name": "bgGradient", "scrollfactor": 0, "startPos": [0, 0]},
+        {"name": "lvl1_bg1", "scrollfactor": 0.1, "startPos": [-500, 0]},
+        {"name": "lvl1_bg2", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "bgGround", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl1_bg4", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl1_bg5", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl1_bg6", "scrollfactor": 1, "startPos": [0, 0]}
     ],
     "foregroundLayers": [
-        "lvl1_fg0",
-        "lvl1_fg1"
+        {"name": "lvl1_fg0", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl1_fg1", "scrollfactor": 1, "startPos": [0, 0]}
     ]
 }

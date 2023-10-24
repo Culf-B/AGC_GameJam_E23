@@ -9,12 +9,12 @@
         "lvl2_fg0"
     ],
     "backgroundLayers": [
-        "lvl2_bg0",
-        "lvl2_bg1",
-        "lvl2_bg2",
-        "lvl2_bg3"
+        {"name": "lvl2_bg0", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl2_bg1", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl2_bg2", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl2_bg3", "scrollfactor": 1, "startPos": [0, 0]}
     ],
     "foregroundLayers": [
-        "lvl2_fg0"
+        {"name": "lvl2_fg0", "scrollfactor": 1, "startPos": [0, 0]}
     ]
 }

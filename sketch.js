@@ -3,8 +3,8 @@ let player;
 const assets = {};
 const levels = [];
 
-const sW = 800;
-const sH = 800;
+const sW = 1600;
+const sH = 900;
 
 // Functions for dataloading
 function loadAssets(jsonData) {
@@ -35,7 +35,7 @@ function preload() {
   // Preload asset files
   loadJSON("assets/assets.json", loadAssets);
   // Preload level files
-  loadJSON("levels/lvl1.json", loadLevels);
+  loadJSON("levels/lvl2.json", loadLevels);
 }
 
 function setup() {

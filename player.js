@@ -17,7 +17,7 @@ class Player {
         
         // Position and size
         this.x = 0;
-        this.y = 100;
+        this.y = 0;
         this.size = 100;
 
         this.freeMove = false;
@@ -61,6 +61,7 @@ class Player {
         /*
         Draw the player on the screen
         */
+        // Determine player x position
         if (this.freeMove && this.x > 0) {
             this.drawX = this.x + sW / 2 - this.size / 2 - (level.levelWidth - level.sW);
         } else if (this.freeMove && this.x < 0) {
