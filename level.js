@@ -21,7 +21,7 @@ class Level {
         this.player.draw();
         // Foreground layers starting at -1
         this.foregroundLayers.forEach(layer => {
-            image(this.allAssets[layer, 0, 0])
+            image(this.allAssets[layer].file, 0, 0, this.width, this.height)
         });
     }
 }
