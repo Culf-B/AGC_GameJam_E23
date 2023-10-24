@@ -20,7 +20,6 @@ function loadLevels(jsonData) {
     levels.push({
       key: jsonData.name,
       value: {
-        "levelLength": jsonData.levelLength,
         "assetList": jsonData.assetList,
         "backgroundLayers": jsonData.backgroundLayers,
         "foregroundLayers": jsonData.foregroundLayers

@@ -18,12 +18,8 @@
             "file": "ground.png"
         },
         {
-            "name": "bgGradient",
-            "file": "bgGradient.png"
-        },
-        {
-            "name": "bgGround",
-            "file": "bgGround.png"
+            "name": "lvl1_bg0",
+            "file": "lvl1_bg0.png"
         },
         {
             "name": "lvl1_bg1",
@@ -32,6 +28,10 @@
         {
             "name": "lvl1_bg2",
             "file": "lvl1_bg2.png"
+        },
+        {
+            "name": "lvl1_bg3",
+            "file": "lvl1_bg3.png"
         },
         {
             "name": "lvl1_bg4",
@@ -52,26 +52,6 @@
         {
             "name": "lvl1_fg1",
             "file": "lvl1_fg1.png"
-        },
-        {
-            "name": "lvl2_bg0",
-            "file": "lvl2_bg0.png"
-        },
-        {
-            "name": "lvl2_bg1",
-            "file": "lvl2_bg1.png"
-        },
-        {
-            "name": "lvl2_bg2",
-            "file": "lvl2_bg2.png"
-        },
-        {
-            "name": "lvl2_bg3",
-            "file": "lvl2_bg3.png"
-        },
-        {
-            "name": "lvl2_fg0",
-            "file": "lvl2_fg0.png"
         }
     ]
 }
