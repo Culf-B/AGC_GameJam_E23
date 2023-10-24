@@ -1,10 +1,11 @@
 {
     "name": "The Beginning",
+    "levelLength": "bgGround",
     "assetList": [
-        "lvl1_bg0",
+        "bgGradient",
         "lvl1_bg1",
         "lvl1_bg2",
-        "lvl1_bg3",
+        "bgGround",
         "lvl1_bg4",
         "lvl1_bg5",
         "lvl1_bg6",
@@ -12,10 +13,10 @@
         "lvl1_fg1"
     ],
     "backgroundLayers": [
-        "lvl1_bg0",
+        "bgGradient",
         "lvl1_bg1",
         "lvl1_bg2",
-        "lvl1_bg3",
+        "bgGround",
         "lvl1_bg4",
         "lvl1_bg5",
         "lvl1_bg6"
