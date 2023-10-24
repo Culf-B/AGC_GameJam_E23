@@ -1,34 +1,22 @@
 {
     "name": "TestLevel",
     "assetList": [
-        {
-            "name": "flower",
-            "filename": "flower.png"
-        },
-        {
-            "name": "g",
-            "filename": "ground.png"
-        },
-        {
-            "name": "bg1",
-            "filename": "background1.png"
-        },
-        {
-            "name": "bg2",
-            "filename": "background2.png"
-        }
+        "flower",
+        "ground",
+        "background1",
+        "background2"
     ],
     "layers": [
         {
-            "name": "g",
+            "name": "ground",
             "placement": 1
         },
         {
-            "name": "bg1",
+            "name": "background1",
             "placement": 2
         },
         {   
-            "name": "bg2",
+            "name": "background2",
             "placement": 3
         }
     ]
