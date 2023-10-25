@@ -19,7 +19,7 @@ class Player {
         this.x = 0;
         this.y = 0;
         this.size = 100;
-
+        
         this.freeMove = false;
     }
   
