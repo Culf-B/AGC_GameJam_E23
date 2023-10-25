@@ -21,14 +21,19 @@ class Player {
         this.size = 100;
 
         this.freeMove = false;
+        this.playerMotion = assets[`playerwalk1`].file;
+        this.playermove=1;
     }
   
     update(delta, level) {
+        // det værste array på jorden (du fikser bare hvis du har lyst)
+        this.playerMotion=[assets[`playerwalk1`].file,assets[`playerwalk2`].file,assets[`playerwalk3`].file,assets[`playerwalk4`].file,assets[`playerwalk5`].file,assets[`playerwalk6`].file,assets[`playerwalk7`].file,assets[`playerwalk8`].file];
+
         /*
         Events and movement
         Argument "delta" has to be time in seconds since the last frame (deltaTime / 1000)
         */
-        
+
         let movementToDo = [0, 0];
         // Events
         if (keyIsDown(this.keyCodes.mLeft)) {
@@ -70,7 +75,7 @@ class Player {
             this.drawX = sW / 2 - this.size / 2;
         }
         square(this.drawX, this.y, this.size);
-        image(assets[`playerwalk1`].file,this.drawX,this.y);
+        image(this.playerMotion[this.playermove],this.drawX,this.y);
 
     }
   }
