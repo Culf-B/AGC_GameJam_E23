@@ -19,7 +19,7 @@ class Player {
         this.x = 0;
         this.y = 0;
         this.size = 100;
-        
+
         this.freeMove = false;
     }
   
@@ -70,5 +70,7 @@ class Player {
             this.drawX = sW / 2 - this.size / 2;
         }
         square(this.drawX, this.y, this.size);
+        image(assets[`playerwalk1`].file,this.drawX,this.y);
+
     }
   }

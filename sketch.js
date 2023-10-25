@@ -35,17 +35,20 @@ function preload() {
   // Preload asset files
   loadJSON("assets/assets.json", loadAssets);
   // Preload level files
-  loadJSON("levels/lvl2.json", loadLevels);
+  loadJSON("levels/lvl1.json", loadLevels);
 }
 
 function setup() {
   createCanvas(sW, sH);
   player = new Player(65, 68, 32);
   level = new Level(sW, sH, levels[0], assets, player);
+  for (i=0;i<9;i++) {
+    console.log(i);
+  }
 }
 
 function draw() {
   background(220);
-  level.update(deltaTime / 1000);
-  level.draw();
+  level.update(deltaTime / 1000); 
+  level.draw(); 
 }
