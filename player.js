@@ -76,8 +76,11 @@ class Player {
         } else {
             this.drawX = sW / 2 - this.size / 2;
         }
-        image(this.playerMotion[round(this.playermove)],this.drawX-75,this.y-85,200,200);
-        console.log(this.playermove);
+        push()
+        translate(this.drawX-75,this.y-85)
+        scale(-1,1);
+        image(this.playerMotion[round(this.playermove)],0,0,200,200);
+        pop()
         if(this.playermove>=8){
             this.playermove=1;
         }
