@@ -21,13 +21,13 @@ class Player {
         this.size = 100;
 
         this.freeMove = false;
-        this.playerMotion = assets[`playerwalk1`].file;
+        this.playerMotion = assets[`playerwalk2`].file;
         this.playermove=1;
     }
   
     update(delta, level) {
         // det værste array på jorden (du fikser bare hvis du har lyst)
-        this.playerMotion=[assets[`playerwalk1`].file,assets[`playerwalk2`].file,assets[`playerwalk3`].file,assets[`playerwalk4`].file,assets[`playerwalk5`].file,assets[`playerwalk6`].file,assets[`playerwalk7`].file,assets[`playerwalk8`].file];
+        this.playerMotion=[assets[`playerwalk1`].file,assets[`playerwalk2`].file,assets[`playerwalk3`].file,assets[`playerwalk4`].file,assets[`playerwalk5`].file,assets[`playerwalk6`].file,assets[`playerwalk7`].file,assets[`playerwalk8`].file,assets[`playerwalk1`].file];
 
         /*
         Events and movement
@@ -38,9 +38,11 @@ class Player {
         // Events
         if (keyIsDown(this.keyCodes.mLeft)) {
             movementToDo[0] -= 1 * this.speed;
+            this.playermove-=0.12;
         }
         if (keyIsDown(this.keyCodes.mRight)) {
             movementToDo[0] += 1 * this.speed;
+            this.playermove+=0.12;
         }
         if (keyIsDown(this.keyCodes.jump) && this.y == sH - this.size) {
             this.vel[1] -= this.jumpForce;
@@ -74,8 +76,13 @@ class Player {
         } else {
             this.drawX = sW / 2 - this.size / 2;
         }
-        square(this.drawX, this.y, this.size);
-        image(this.playerMotion[this.playermove],this.drawX,this.y);
-
+        image(this.playerMotion[round(this.playermove)],this.drawX-75,this.y-85,200,200);
+        console.log(this.playermove);
+        if(this.playermove>=8){
+            this.playermove=1;
+        }
+        if(this.playermove<=0){
+            this.playermove=8;
+        }
     }
   }
