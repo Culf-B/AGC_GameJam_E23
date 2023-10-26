@@ -3,8 +3,8 @@ let player;
 const assets = {};
 const levels = [];
 
-const sW = 1600;
-const sH = 900;
+const sW = 1280;
+const sH = 720;
 
 // Functions for dataloading
 function loadAssets(jsonData) {

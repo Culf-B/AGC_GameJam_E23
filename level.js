@@ -18,7 +18,7 @@ class Level {
     }
 
     update(delta) {
-        this.player.update(delta);
+        this.player.update(delta);  
     }
 
     draw() {

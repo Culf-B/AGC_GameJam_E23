@@ -88,6 +88,30 @@
         {
             "name": "playerwalk8",
             "file": "PlayerWalk8.PNG"
+        },
+        {
+            "name": "playerwalk9",
+            "file": "playerIdle.png"
+        },
+        {
+            "name": "playerwalk10",
+            "file": "playerJump1.png"
+        },
+        {
+            "name": "playerwalk11",
+            "file": "playerJump2.png"
+        },
+        {
+            "name": "playerwalk12",
+            "file": "playerJump3.png"
+        },
+        {
+            "name": "playerwalk13",
+            "file": "playerJump4.png"
+        },
+        {
+            "name": "playerwalk14",
+            "file": "playerJump5.png"
         }
     ]
 }
