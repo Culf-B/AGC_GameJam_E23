@@ -1,3 +1,4 @@
+var gameRunning = false;
 let player;
 
 const assets = {};
@@ -41,13 +42,23 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(sW, sH);
   player = new Player(65, 68, 32);
   level = new Level(sW, sH, levels[0], assets, player);
 }
 
 function draw() {
-  background(220);
-  level.update(deltaTime / 1000); 
-  level.draw(); 
+  if (gameRunning) {
+    background(220);
+    level.update(deltaTime / 1000); 
+    level.draw(); 
+  }
+}
+
+function startGame() {
+  if (!gameRunning) {
+    document.getElementById("titleScreen").style.display = "none";
+    document.getElementById("gameScreen").style.display = "block";
+    createCanvas(sW, sH, document.getElementById("gameScreen"));
+    gameRunning = true;
+  }
 }
