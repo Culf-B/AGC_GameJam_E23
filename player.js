@@ -29,7 +29,7 @@ class Player {
     update(delta, level) {
         // Player animation assets
         this.playerMotion=[];
-        for (i=0;i<14;i++){
+        for (let i=0;i<14;i++){
            this.playerMotion.push(assets[`playerwalk` + (i+1)].file)
            
         }
