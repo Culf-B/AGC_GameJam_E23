@@ -44,9 +44,6 @@ function setup() {
   createCanvas(sW, sH);
   player = new Player(65, 68, 32);
   level = new Level(sW, sH, levels[0], assets, player);
-  for (i=0;i<9;i++) {
-    console.log(i);
-  }
 }
 
 function draw() {
