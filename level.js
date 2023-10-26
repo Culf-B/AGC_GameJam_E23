@@ -6,6 +6,9 @@ class Level {
         this.levelData = levelData;
         this.player = player
         this.allAssets = allAssetData;
+        
+        this.player.x = levelData.value.spawnPos[0];
+        this.player.y = levelData.value.spawnPos[0];
 
         // Get levelwidth from the asset that defines levelwidth and scale it to fit screenheight while keeping ratio
         this.levelWidth = (this.sH * this.allAssets[levelData.value.levelLength].file.width) / this.allAssets[levelData.value.levelLength].file.height;
@@ -23,7 +26,7 @@ class Level {
     }
 
     update(delta) {
-        this.player.update(delta, this);  
+        this.player.update(delta, this);
     }
 
     draw() {

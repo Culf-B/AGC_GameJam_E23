@@ -73,9 +73,11 @@ class Player {
         // Left and right side boundary
         if (this.x < level.levelData.value.leftBoundary) {
             this.x = level.levelData.value.leftBoundary;
+            changeLevel(level.levelData.value.leftAction);
         }
         if (this.x > level.levelData.value.rightBoundary - this.size) {
             this.x = level.levelData.value.rightBoundary - this.size;
+            changeLevel(level.levelData.value.rightAction);
         }
 
         // Bottom of screen boundary
