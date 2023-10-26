@@ -27,7 +27,7 @@ class Player {
     }
   
     update(delta, level) {
-        // det værste array på jorden (du fikser bare hvis du har lyst)
+        // Player animation assets
         this.playerMotion=[];
         for (i=0;i<14;i++){
            this.playerMotion.push(assets[`playerwalk` + (i+1)].file)
@@ -51,15 +51,16 @@ class Player {
             this.playermove+=0.12;
             this.direction=1;
         }
-        if (keyIsDown(this.keyCodes.jump) && this.y == sH - this.size) {
+        if (keyIsDown(this.keyCodes.jump) && this.y == sH * level.levelData.value.floorPosition - this.size) {
             this.vel[1] -= this.jumpForce;
         }
+        // Change animation
         if (movementToDo[0]==0){
            this.playermove=8;
         }
-  
+        
         // Velocity changes on y axis (gravity and jump)
-        if (this.y < sH - this.size) {
+        if (this.y < sH * level.levelData.value.floorPosition - this.size) {
           this.vel[1] += this.g * delta * 100;
         } else if (this.vel[1] > 0) {
           this.vel[1] = 0; 
@@ -69,9 +70,17 @@ class Player {
         this.x += movementToDo[0] * delta;
         this.y += this.vel[1] * delta;
 
+        // Left and right side boundary
+        if (this.x < level.levelData.value.leftBoundary) {
+            this.x = level.levelData.value.leftBoundary;
+        }
+        if (this.x > level.levelData.value.rightBoundary - this.size) {
+            this.x = level.levelData.value.rightBoundary - this.size;
+        }
+
         // Bottom of screen boundary
-        if (this.y > sH - this.size) {
-          this.y = sH - this.size;
+        if (this.y > sH * level.levelData.value.floorPosition - this.size) {
+          this.y = sH * level.levelData.value.floorPosition  - this.size;
         }
     }
     draw(level) {

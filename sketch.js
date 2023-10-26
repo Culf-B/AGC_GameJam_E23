@@ -20,6 +20,8 @@ function loadLevels(jsonData) {
     levels.push({
       key: jsonData.name,
       value: {
+        "floorPosition": jsonData.floorPosition,
+        "leftBoundary": jsonData.leftBoundary,
         "levelLength": jsonData.levelLength,
         "assetList": jsonData.assetList,
         "backgroundLayers": jsonData.backgroundLayers,
@@ -35,7 +37,7 @@ function preload() {
   // Preload asset files
   loadJSON("assets/assets.json", loadAssets);
   // Preload level files
-  loadJSON("levels/lvl1.json", loadLevels);
+  loadJSON("levels/lvl2.json", loadLevels);
 }
 
 function setup() {

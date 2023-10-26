@@ -1,6 +1,8 @@
 {
     "name": "The Beginning",
     "levelLength": "bgGround",
+    "floorPosition": 0.85,
+    "leftBoundary": -168,
     "assetList": [
         "bgGradient",
         "lvl1_bg1",

@@ -1,6 +1,7 @@
 {
     "name": "The Field",
     "levelLength": "bgGround",
+    "floorPosition": 0.85,
     "assetList": [
         "lvl2_bg0",
         "lvl2_bg1",
