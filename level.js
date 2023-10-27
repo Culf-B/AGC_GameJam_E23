@@ -75,7 +75,7 @@ class Level {
         this.foregroundLayers.forEach(layer => {
             image(this.allAssets[layer.name].file, this.envX * layer.scrollfactor + layer.startPos[0], layer.startPos[1], (this.sH * this.allAssets[layer.name].file.width) / this.allAssets[layer.name].file.height, this.sH);
             //fly animation dimmeren får spillet til at crash når man kommer på stage 2
-            //image(this.Flyanimation[round(this.Flymove)],this.envX * layer.scrollfactor+880,380,150,150)
+            image(this.Flyanimation[round(this.Flymove)],this.envX * layer.scrollfactor+880,380,150,150)
         });
     }
 }
