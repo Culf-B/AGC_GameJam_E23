@@ -42,6 +42,16 @@ class Level {
             this.envX = -(this.levelWidth - this.sW)
             this.player.freeMove = true;
         }
+        /*
+        kat hitbox
+        if(this.player.x >= 600 && this.player.x <=750) && stage 1{
+           
+        }
+        fugle skræmsel
+        if(this.player.x >= 700 && this.player.x <= 1000 && stage 2){
+
+        }
+        */
 
         // Background layers
         this.backgroundLayers.forEach(layer => {
