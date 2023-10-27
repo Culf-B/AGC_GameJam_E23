@@ -112,6 +112,93 @@
         {
             "name": "playerwalk14",
             "file": "playerJump5.png"
+        },
+        {
+            "name": "FlyAnimation1",
+            "file": "FlyAnimation1.png"
+        },
+        {
+            "name": "FlyAnimation2",
+            "file": "FlyAnimation2.png"
+        },
+        {
+            "name": "FlyAnimation3",
+            "file": "FlyAnimation3.png"
+        },
+        {
+            "name": "FlyAnimation4",
+            "file": "FlyAnimation4.png"
+        },
+        {
+            "name": "FlyAnimation5",
+            "file": "FlyAnimation5.png"
+        },   {
+            "name": "FlyAnimation6",
+            "file": "FlyAnimation6.png"
+        },
+        {
+            "name": "FlyAnimation7",
+            "file": "FlyAnimation7.png"
+        },
+        {
+            "name": "FlyAnimation8",
+            "file": "FlyAnimation8.png"
+        },
+        {
+            "name": "FlyAnimation9",
+            "file": "FlyAnimation9.png"
+        },   {
+            "name": "FlyAnimation10",
+            "file": "FlyAnimation1.png"
+        },   {
+            "name": "FlyAnimation10",
+            "file": "FlyAnimation1.png"
+        },   {
+            "name": "FlyAnimation11",
+            "file": "FlyAnimation11.png"
+        },   {
+            "name": "FlyAnimation12",
+            "file": "FlyAnimation12.png"
+        },   {
+            "name": "FlyAnimation13",
+            "file": "FlyAnimation13.png"
+        },   {
+            "name": "FlyAnimation14",
+            "file": "FlyAnimation14.png"
+        },   {
+            "name": "FlyAnimation15",
+            "file": "FlyAnimation15.png"
+        },   {
+            "name": "FlyAnimation16",
+            "file": "FlyAnimation16.png"
+        },   {
+            "name": "FlyAnimation17",
+            "file": "FlyAnimation17.png"
+        },   {
+            "name": "FlyAnimation18",
+            "file": "FlyAnimation18.png"
+        },   {
+            "name": "FlyAnimation19",
+            "file": "FlyAnimation19.png"
+        },   {
+            "name": "FlyAnimation20",
+            "file": "FlyAnimation20.png"
+        },   {
+            "name": "FlyAnimation21",
+            "file": "FlyAnimation21.png"
+        },   {
+            "name": "FlyAnimation22",
+            "file": "FlyAnimation22.png"
+        },   {
+            "name": "FlyAnimation23",
+            "file": "FlyAnimation23.png"
+        },   {
+            "name": "FlyAnimation24",
+            "file": "FlyAnimation24.png"
+        },
+        {
+            "name": "FlyAnimation25",
+            "file": "FlyAnimation25.png"
         }
     ]
 }
