@@ -1,6 +1,11 @@
 {
     "name": "The Field",
     "levelLength": "bgGround",
+    "floorPosition": 0.85,
+    "leftAction": 0,
+    "rightAction": -1,
+    "spawnPos": [0,0],
+    "index": 1,
     "assetList": [
         "lvl2_bg0",
         "lvl2_bg1",
