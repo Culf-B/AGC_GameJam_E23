@@ -30,5 +30,8 @@
     "foregroundLayers": [
         {"name": "lvl1_fg0", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl1_fg1", "scrollfactor": 1, "startPos": [0, 0]}
-    ]
+    ],
+    "npcs": [],
+    "decorations": [{"name": "flies", "position": [900, 380]}],
+    "items": []
 }

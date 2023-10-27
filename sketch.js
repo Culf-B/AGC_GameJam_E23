@@ -3,6 +3,9 @@ let player;
 
 const assets = {};
 const levels = [undefined, undefined];
+var decorations;
+var npcs;
+var items;
 
 const sW = 1280;
 const sH = 720;
@@ -32,9 +35,16 @@ function loadLevels(jsonData) {
         "spawnPos": jsonData.spawnPos,
         "assetList": jsonData.assetList,
         "backgroundLayers": jsonData.backgroundLayers,
-        "foregroundLayers": jsonData.foregroundLayers
+        "foregroundLayers": jsonData.foregroundLayers,
+        "npcs": jsonData.npcs,
+        "decorations": jsonData.decorations,
+        "items": jsonData.items
       }
     }
+}
+
+function loadDecorations(jsonData) {
+  decorations = jsonData;
 }
 
 function preload() {
@@ -46,6 +56,8 @@ function preload() {
   // Preload level files
   loadJSON("levels/lvl1.json", loadLevels);
   loadJSON("levels/lvl2.json", loadLevels);
+  // Preload gameObjects
+  loadJSON("gameObjectData/decorations.json", loadDecorations); 
 }
 
 function setup() {
@@ -82,6 +94,6 @@ function changeLevel(levelIndex) {
   if (levelIndex == -1) {
     endGame();
   } else {
-    level = new Level(sW, sH, levels[levelIndex], assets, player);
+    level = new Level(sW, sH, levels[levelIndex], assets, decorations, player);
   }
 }

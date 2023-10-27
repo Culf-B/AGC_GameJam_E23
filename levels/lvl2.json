@@ -21,5 +21,8 @@
     ],
     "foregroundLayers": [
         {"name": "lvl2_fg0", "scrollfactor": 1, "startPos": [0, 0]}
-    ]
+    ],
+    "npcs": [],
+    "decorations": [],
+    "items": []
 }

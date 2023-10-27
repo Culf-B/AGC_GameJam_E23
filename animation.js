@@ -2,11 +2,11 @@ class GameAnimation {
     constructor(assetNames, timePerFrame, allAssets) {
         this.assets = [];
         assetNames.forEach(name => {
-            this.assets.push(allAssets[name]);
+            this.assets.push(allAssets[name].file);
         });
         this.timePerFrame = timePerFrame;
         this.currentFrameIndex = 0;
-        this.timePassed = 0
+        this.timePassed = 0;
     }
     update(delta) {
         this.timePassed += delta;

@@ -1,0 +1,34 @@
+{
+    "flies": {
+        "animation": [
+            "FlyAnimation1",
+            "FlyAnimation2",
+            "FlyAnimation3",
+            "FlyAnimation4",
+            "FlyAnimation5",
+            "FlyAnimation6",
+            "FlyAnimation7",
+            "FlyAnimation8",
+            "FlyAnimation9",
+            "FlyAnimation10",
+            "FlyAnimation11",
+            "FlyAnimation12",
+            "FlyAnimation13",
+            "FlyAnimation14",
+            "FlyAnimation15",
+            "FlyAnimation16",
+            "FlyAnimation17",
+            "FlyAnimation18",
+            "FlyAnimation19",
+            "FlyAnimation20",
+            "FlyAnimation21",
+            "FlyAnimation22",
+            "FlyAnimation23",
+            "FlyAnimation24",
+            "FlyAnimation25"
+        ],
+        "timePerFrame": 0.016,
+        "scaleFactor": 1,
+        "defaultSize": [100, 100]
+    }
+}
