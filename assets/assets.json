@@ -22,6 +22,10 @@
             "file": "lvl1_bg4.png"
         },
         {
+            "name": "lvl1_lampeLys",
+            "file": "lvl1_lampeLys.png"
+        },
+        {
             "name": "lvl1_bg5",
             "file": "lvl1_bg5.png"
         },
@@ -199,6 +203,30 @@
         {
             "name": "FlyAnimation25",
             "file": "FlyAnimation25.png"
+        },
+        {
+            "name": "cat1",
+            "file": "cat1.png"
+        },
+        {
+            "name": "cat2",
+            "file": "cat2.png"
+        },
+        {
+            "name": "cat3",
+            "file": "cat3.png"
+        },
+        {
+            "name": "cat4",
+            "file": "cat4.png"
+        },
+        {
+            "name": "cat5",
+            "file": "cat5.png"
+        },
+        {
+            "name": "cat6",
+            "file": "cat6.png"
         }
     ]
 }

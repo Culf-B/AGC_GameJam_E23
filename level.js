@@ -1,5 +1,5 @@
 class Level {
-    constructor(w, h, levelData, allAssetData, allDecorationData, player) {
+    constructor(w, h, levelData, allAssetData, allDecorationData, player, spawnRight) {
         this.sW = w;
         this.sH = h;
     
@@ -12,8 +12,14 @@ class Level {
             this.decorations.push(new Decoration(decoration.position[0], decoration.position[1], allDecorationData[decoration.name]));
         })
         
-        this.player.x = levelData.value.spawnPos[0];
-        this.player.y = levelData.value.spawnPos[0];
+        if (spawnRight) {
+            this.player.x = levelData.value.spawnPosR[0];
+            this.player.y = levelData.value.spawnPosR[1];
+        } else {
+            this.player.x = levelData.value.spawnPosL[0];
+            this.player.y = levelData.value.spawnPosL[1];
+        }
+        
 
         // Get levelwidth from the asset that defines levelwidth and scale it to fit screenheight while keeping ratio
         this.levelWidth = (this.sH * this.allAssets[levelData.value.levelLength].file.width) / this.allAssets[levelData.value.levelLength].file.height;

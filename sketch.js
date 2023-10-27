@@ -32,7 +32,8 @@ function loadLevels(jsonData) {
         "leftAction": jsonData.leftAction,
         "rightAction": jsonData.rightAction,
         "levelLength": jsonData.levelLength,
-        "spawnPos": jsonData.spawnPos,
+        "spawnPosL": jsonData.spawnPosL,
+        "spawnPosR": jsonData.spawnPosR,
         "assetList": jsonData.assetList,
         "backgroundLayers": jsonData.backgroundLayers,
         "foregroundLayers": jsonData.foregroundLayers,
@@ -90,10 +91,10 @@ function endGame() {
   }
 }
 
-function changeLevel(levelIndex) {
+function changeLevel(levelIndex, spawnRight) {
   if (levelIndex == -1) {
     endGame();
   } else {
-    level = new Level(sW, sH, levels[levelIndex], assets, decorations, player);
+    level = new Level(sW, sH, levels[levelIndex], assets, decorations, player, spawnRight);
   }
 }

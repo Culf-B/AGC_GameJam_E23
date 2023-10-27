@@ -6,13 +6,15 @@
     "leftAction": -1,
     "rightAction": 1,
     "index": 0,
-    "spawnPos": [170, 0],
+    "spawnPosL": [170, 512],
+    "spawnPosR": [1109, 512],
     "assetList": [
         "bgGradient",
         "lvl1_bg1",
         "lvl1_bg2",
         "bgGround",
         "lvl1_bg4",
+        "lvl1_lampeLys",
         "lvl1_bg5",
         "lvl1_bg6",
         "lvl1_fg0",
@@ -24,6 +26,7 @@
         {"name": "lvl1_bg2", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "bgGround", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl1_bg4", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl1_lampeLys", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl1_bg5", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl1_bg6", "scrollfactor": 1, "startPos": [0, 0]}
     ],
@@ -32,6 +35,9 @@
         {"name": "lvl1_fg1", "scrollfactor": 1, "startPos": [0, 0]}
     ],
     "npcs": [],
-    "decorations": [{"name": "flies", "position": [900, 380]}],
+    "decorations": [
+        {"name": "flies", "position": [900, 380]},
+        {"name": "cat", "position": [1275, 380]}
+    ],
     "items": []
 }

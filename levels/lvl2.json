@@ -4,10 +4,12 @@
     "floorPosition": 0.85,
     "leftAction": 0,
     "rightAction": -1,
-    "spawnPos": [0,0],
+    "spawnPosL": [-585, 512],
+    "spawnPosR": [1109, 512],
     "index": 1,
     "assetList": [
         "lvl2_bg0",
+        "lvl1_bg1",
         "lvl2_bg1",
         "lvl2_bg2",
         "lvl2_bg3",
@@ -15,6 +17,7 @@
     ],
     "backgroundLayers": [
         {"name": "lvl2_bg0", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl1_bg1", "scrollfactor": 0.1, "startPos": [-580, 0]},
         {"name": "lvl2_bg1", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl2_bg2", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl2_bg3", "scrollfactor": 1, "startPos": [0, 0]}
@@ -23,6 +26,6 @@
         {"name": "lvl2_fg0", "scrollfactor": 1, "startPos": [0, 0]}
     ],
     "npcs": [],
-    "decorations": [],
+    "decorations": [{"name": "cat", "position": [35, 380]}],
     "items": []
 }
