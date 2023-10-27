@@ -1,4 +1,4 @@
-class Animation {
+class GameAnimation {
     constructor(assetNames, timePerFrame, allAssets) {
         this.assets = [];
         assetNames.forEach(name => {
