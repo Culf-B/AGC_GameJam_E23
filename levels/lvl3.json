@@ -21,6 +21,7 @@
         {"name": "lvl3_bg3", "scrollfactor": 0.5, "startPos": [0, 0]}
     ],
     "foregroundLayers": [
+        {"name": "lvl3_fg1", "scrollfactor": 1.5, "startPos": [0, 0]}
     ],
     "npcs": [],
     "decorations": [
