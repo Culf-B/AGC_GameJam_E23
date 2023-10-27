@@ -1,0 +1,29 @@
+{
+    "name": "The Beginning",
+    "levelLength": "bgGround",
+    "floorPosition": 0.85,
+    "leftBoundary": -168,
+    "leftAction": 1,
+    "rightAction": -1,
+    "index": 2,
+    "spawnPosL": [170, 512],
+    "spawnPosR": [1109, 512],
+    "assetList": [
+        "bgGradient",
+        "lvl3_bg1",
+        "lvl3_bg2",
+        "lvl3_bg3",
+    ],
+    "backgroundLayers": [
+        {"name": "bgGradient", "scrollfactor": 0, "startPos": [0, 0]},
+        {"name": "lvl3_bg1", "scrollfactor": 1, "startPos": [0, 0]},
+        {"name": "lvl3_bg2", "scrollfactor": 0.7, "startPos": [0, 0]},
+        {"name": "lvl3_bg3", "scrollfactor": 0.5, "startPos": [0, 0]}
+    ],
+    "foregroundLayers": [
+    ],
+    "npcs": [],
+    "decorations": [
+    ],
+    "items": []
+}
