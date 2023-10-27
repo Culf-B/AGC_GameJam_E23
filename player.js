@@ -102,7 +102,6 @@ class Player {
         scale(this.direction,1);
         image(this.playerMotion[round(this.playermove)],0,-200,200,300);
         pop()   
-
         if(this.playermove>=7){
             this.playermove=1;
         }
