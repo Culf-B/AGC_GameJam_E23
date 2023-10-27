@@ -227,6 +227,70 @@
         {
             "name": "cat6",
             "file": "cat6.png"
+        },
+        {
+            "name": "grandma1",
+            "file": "grandma1.png"
+        },
+        {
+            "name": "grandma2",
+            "file": "grandma2.png"
+        },
+        {
+            "name": "interactionIcon",
+            "file": "interactionIcon.png"
+        },
+        {
+            "name": "lvl3_bg1",
+            "file": "lvl3_bg1.png"
+        },
+        {
+            "name": "lvl3_bg2",
+            "file": "lvl3_bg2.png"
+        },
+        {
+            "name": "lvl3_bg3",
+            "file": "lvl3_bg3.png"
+        },
+        {
+            "name": "lvl3_fg1",
+            "file": "lvl3_fg1.png"
+        },
+        {
+            "name": "rightArrow",
+            "file": "rightArrow.png"
+        },
+        {
+            "name": "sc1",
+            "file": "sc1.png"
+        },
+        {
+            "name": "sc2",
+            "file": "sc2.png"
+        },
+        {
+            "name": "sc3",
+            "file": "sc3.png"
+        },
+        {
+            "name": "sc4",
+            "file": "sc4.png"
+        },
+        {
+            "name": "sc5",
+            "file": "sc5.png"
+        },
+        {
+            "name": "sc6",
+            "file": "sc6.png"
+        },
+        {
+            "name": "book",
+            "file": "book.png"
+        },
+        {
+            "name": "credits",
+            "file": "credits.png"
         }
     ]
 }

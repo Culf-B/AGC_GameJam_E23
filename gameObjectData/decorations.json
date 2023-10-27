@@ -30,18 +30,5 @@
         "timePerFrame": 0.016,
         "scaleFactor": 1,
         "defaultSize": [100, 100]
-    },
-    "cat": {
-        "animation": [
-            "cat1",
-            "cat2",
-            "cat3",
-            "cat4",
-            "cat5",
-            "cat6"
-        ],
-        "timePerFrame": 0.175,
-        "scaleFactor": 1,
-        "defaultSize": [102, 164]
     }
 }

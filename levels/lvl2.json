@@ -3,13 +3,12 @@
     "levelLength": "bgGround",
     "floorPosition": 0.85,
     "leftAction": 0,
-    "rightAction": -1,
+    "rightAction": 2,
     "spawnPosL": [-585, 512],
     "spawnPosR": [1109, 512],
     "index": 1,
     "assetList": [
         "lvl2_bg0",
-        "lvl1_bg1",
         "lvl2_bg1",
         "lvl2_bg2",
         "lvl2_bg3",
@@ -18,14 +17,17 @@
     "backgroundLayers": [
         {"name": "lvl2_bg0", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl1_bg1", "scrollfactor": 0.1, "startPos": [-580, 0]},
-        {"name": "lvl2_bg1", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl2_bg2", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl2_bg3", "scrollfactor": 1, "startPos": [0, 0]}
     ],
     "foregroundLayers": [
         {"name": "lvl2_fg0", "scrollfactor": 1, "startPos": [0, 0]}
     ],
-    "npcs": [],
-    "decorations": [{"name": "cat", "position": [35, 380]}],
+    "npcs": [
+        {"name": "cat", "position": [35, 380], "interactionOffset": [25, -60]},
+        {"name": "grave", "position": [665, 430], "interactionOffset": [25, -60]},
+        {"name": "scareCrow", "position": [1300, 135], "interactionOffset": [130, -60]}
+    ],
+    "decorations": [],
     "items": []
 }

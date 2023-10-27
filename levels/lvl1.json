@@ -34,10 +34,15 @@
         {"name": "lvl1_fg0", "scrollfactor": 1, "startPos": [0, 0]},
         {"name": "lvl1_fg1", "scrollfactor": 1, "startPos": [0, 0]}
     ],
-    "npcs": [],
-    "decorations": [
-        {"name": "flies", "position": [900, 380]},
-        {"name": "cat", "position": [1275, 380]}
+    "npcs": [
+        {"name": "cat", "position": [1275, 380], "interactionOffset": [25, -60]},
+        {"name": "grandma", "position": [800, 320], "interactionOffset": [65, -20]}
+
     ],
-    "items": []
+    "decorations": [
+        {"name": "flies", "position": [900, 380]}
+    ],
+    "items": [
+        
+    ]
 }

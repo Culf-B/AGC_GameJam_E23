@@ -1,0 +1,89 @@
+{
+    "cat": {
+        "animation": [
+            "cat1",
+            "cat2",
+            "cat3",
+            "cat4",
+            "cat5",
+            "cat6"
+        ],
+        "timePerFrame": 0.175,
+        "scaleFactor": 1,
+        "defaultSize": [102, 164],
+        "interactions": [
+            [
+                "Felix: “Meow…”"
+            ]
+        ],
+        "interactionIcon": "interactionIcon"
+    },
+    "grandma": {
+        "name": "grandma",
+        "animation": [
+            "grandma1",
+            "grandma2"
+        ],
+        "timePerFrame": 0.5,
+        "scaleFactor": 1,
+        "defaultSize": [163, 262],
+        "interactions": [
+            [
+                "Grandma Betty: (muttering) Blast it, I can’t seem to find my diary! I had so many name- ahem…. Memories and… stories in there",
+                "You: Grandma Betty, don’t worry I’ll help you find it.",
+                "Grandma Betty: (sighs) you’re a good lad. I was just reading it a while ago. I can’t remember where I put it."
+            ],
+            [
+                "Grandma Betty: Thank you!",
+                "Grandma Betty: Now my soul can rest in peace"
+            ]
+        ],
+        "interactionIcon": "interactionIcon"
+    },
+    "grave": {
+        "animation": [
+        ],
+        "timePerFrame": 60,
+        "scaleFactor": 1,
+        "defaultSize": [0, 0],
+        "interactions": [
+            [
+                "“rest in piece little Felix”"
+            ]
+        ],
+        "interactionIcon": "interactionIcon"
+    },
+    "scareCrow": {
+        "animation": [
+            "sc1",
+            "sc2",
+            "sc3",
+            "sc4",
+            "sc5",
+            "sc6"
+        ],
+        "timePerFrame": 0.14,
+        "scaleFactor": 1,
+        "defaultSize": [328, 407],
+        "interactions": [
+            [
+                "Scarecrow: ...",
+                "You notice that the right sleeve is ripped… like someone pulled it."
+            ]
+        ],
+        "interactionIcon": "interactionIcon"
+    },
+    "book": {
+        "name": "book",
+        "animation": [
+            "book"
+        ],
+        "timePerFrame": 60,
+        "scaleFactor": 1,
+        "defaultSize": [50, 50],
+        "interactions": [
+            ["You picked up a diary"]
+        ],
+        "interactionIcon": "interactionIcon"
+    }
+}

@@ -2,11 +2,12 @@ class Player {
     /*
     Basic player class
     */
-    constructor(mLeft, mRight, jump) {
+    constructor(mLeft, mRight, jump, interact) {
         this.keyCodes = {
             "mLeft": mLeft,
             "mRight": mRight,
-            "jump": jump
+            "jump": jump,
+            "interact": interact
         };
         
         // Physics
@@ -24,6 +25,13 @@ class Player {
         this.playerMotion = assets[`playerwalk2`].file;
         this.playermove=1;
         this.direction=1;
+
+        this.inInteraction = false;
+        this.wantsInteraction = false;
+        this.currentInteraction = [];
+        this.interactionIndex = 0;
+        this.interactionKeyLastState = false;
+        this.interactionSkipTimer = 0;
     }
   
     update(delta, level) {
@@ -41,19 +49,43 @@ class Player {
 
         let movementToDo = [0, 0];
         // Events
-        if (keyIsDown(this.keyCodes.mLeft)) {
-            movementToDo[0] -= 1 * this.speed;
-            this.playermove-=0.12;
-            this.direction=-1;
+        if (!this.inInteraction) {
+            if (keyIsDown(this.keyCodes.mLeft)) {
+                movementToDo[0] -= 1 * this.speed;
+                this.playermove-=0.12;
+                this.direction=-1;
+            }
+            if (keyIsDown(this.keyCodes.mRight)) {
+                movementToDo[0] += 1 * this.speed;
+                this.playermove+=0.12;
+                this.direction=1;
+            }
+            if (keyIsDown(this.keyCodes.jump) && this.y == sH * level.levelData.value.floorPosition - this.size) {
+                this.vel[1] -= this.jumpForce;
+            }
         }
-        if (keyIsDown(this.keyCodes.mRight)) {
-            movementToDo[0] += 1 * this.speed;
-            this.playermove+=0.12;
-            this.direction=1;
+        // Interaction events / update
+        if (keyIsDown(this.keyCodes.interact)) {
+            if (!this.inInteraction && this.interactionSkipTimer > 1) {
+                this.wantsInteraction = true;
+            } else {
+                this.wantsInteraction = false;
+                if (this.interactionSkipTimer > 1) {
+                    this.interactionSkipTimer = 0;
+                    this.interactionIndex += 1
+                    if (this.interactionIndex > this.currentInteraction.length - 1) {
+                        this.inInteraction = false;
+                        if (finalInteractionStarted) {
+                            changeLevel(-2);
+                        }
+                    }
+                }
+            }
+        } else {
+            this.wantsInteraction = false;
         }
-        if (keyIsDown(this.keyCodes.jump) && this.y == sH * level.levelData.value.floorPosition - this.size) {
-            this.vel[1] -= this.jumpForce;
-        }
+        this.interactionSkipTimer += delta;
+
         // Change animation
         if (movementToDo[0]==0){
            this.playermove=8;
@@ -77,7 +109,9 @@ class Player {
         }
         if (this.x > level.levelData.value.rightBoundary - this.size) {
             this.x = level.levelData.value.rightBoundary - this.size;
-            changeLevel(level.levelData.value.rightAction, false);
+            if (level.levelData.value.rightAction != 0) {
+                changeLevel(level.levelData.value.rightAction, false);
+            }
         }
 
         // Bottom of screen boundary
@@ -107,6 +141,18 @@ class Player {
         }
         if(this.playermove<=0){
             this.playermove=7;
+        }
+        // Display interaction
+        if (this.inInteraction) {
+            stroke(255);
+            fill(0);
+            textSize(20);
+            rect(15, 15, textWidth(this.currentInteraction[this.interactionIndex]) + 50, 50);
+            fill(255);
+            text(this.currentInteraction[this.interactionIndex], 25, 45);
+            if (this.interactionSkipTimer > 1) {
+                image(assets["rightArrow"].file, textWidth(this.currentInteraction[this.interactionIndex] + 20), 15, 50, 50);
+            }
         }
     }
   }

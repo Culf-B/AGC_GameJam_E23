@@ -1,15 +1,23 @@
 class Level {
-    constructor(w, h, levelData, allAssetData, allDecorationData, player, spawnRight) {
+    constructor(w, h, levelData, allAssetData, allDecorationData, allNpcData, player, spawnRight) {
         this.sW = w;
         this.sH = h;
     
         this.levelData = levelData;
         this.player = player
         this.allAssets = allAssetData;
+        console.log(allNpcData);
 
         this.decorations = [];
         this.levelData.value.decorations.forEach(decoration => {
             this.decorations.push(new Decoration(decoration.position[0], decoration.position[1], allDecorationData[decoration.name]));
+        })
+        this.npcs = [];
+        this.levelData.value.npcs.forEach(npc => {
+            if (npc.interactionOffset == undefined) {
+                npc.interactionOffset = [0, 0];
+            }
+            this.npcs.push(new Npc(npc.position[0], npc.position[1], allNpcData[npc.name], npc.interactionOffset));
         })
         
         if (spawnRight) {
@@ -20,7 +28,6 @@ class Level {
             this.player.y = levelData.value.spawnPosL[1];
         }
         
-
         // Get levelwidth from the asset that defines levelwidth and scale it to fit screenheight while keeping ratio
         this.levelWidth = (this.sH * this.allAssets[levelData.value.levelLength].file.width) / this.allAssets[levelData.value.levelLength].file.height;
 
@@ -39,7 +46,10 @@ class Level {
     update(delta) {
         this.player.update(delta, this);
         this.decorations.forEach(decoration => {
-            decoration.update(delta)
+            decoration.update(delta);
+        });
+        this.npcs.forEach(npc => {
+            npc.update(delta, this.player, this.envX);
         });
     }
     
@@ -66,6 +76,11 @@ class Level {
         // Decorations
         this.decorations.forEach(decoration => {
             decoration.draw(this.envX);
+        });
+
+        // Npcs
+        this.npcs.forEach(npc => {
+            npc.draw(this.envX);
         });
 
         // Layer 0 Player
