@@ -1,4 +1,4 @@
 # AGC_GameJam_E23
-// huhuhuhuhhhhhuhuhuhuh fnaf
 
-https://www.youtube.com/watch?v=dQw4w9WgXcQ
+The game is hosted on itch.io and can be played in the browser.
+Link to game: https://culf.itch.io/delusion
